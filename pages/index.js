@@ -1,23 +1,26 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Image from "react-bootstrap/Image";
+
+import Footer from "@components/Footer";
+import SubscribtionForm from "@components/SubscribtionForm";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Mattel, Inc. | Mattel, Inc.</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
+      <Navbar expand="lg" fixed="top">
+        <Container>
+          <Image src="/logo.png" roundedCircle />
+        </Container>
+      </Navbar>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
+      <SubscribtionForm />
       <Footer />
     </div>
-  )
+  );
 }
