@@ -5,22 +5,26 @@ import Image from "react-bootstrap/Image";
 
 import Footer from "@components/Footer";
 import SubscribtionForm from "@components/SubscribtionForm";
+import { Wrapper } from "hoc";
+import { regions } from "utils";
 
 export default function Home() {
-  return (
-    <div className="container-fluid">
-      <Head>
-        <title>Mattel, Inc. | Mattel, Inc.</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <Navbar expand="lg" fixed="top">
-        <Container>
-          <Image src="/logo.png" roundedCircle />
-        </Container>
-      </Navbar>
+  const activeRegion = regions["en-us"];
 
-      <SubscribtionForm />
-      <Footer />
-    </div>
-  );
+  return <Wrapper></Wrapper>;
+  // return (
+  //   <div className="container-fluid">
+  //     <Head>
+  //       <title>Mattel, Inc. | Mattel, Inc.</title>
+  //       <link rel="icon" href="/favicon.png" />
+  //     </Head>
+  //     <Navbar expand="lg" fixed="top">
+  //       <Container>
+  //         <Image src="/logo.png" roundedCircle />
+  //       </Container>
+  //     </Navbar>
+  //     <SubscribtionForm />
+  //     <Footer />
+  //   </div>
+  // );
 }
