@@ -1,3 +1,131 @@
 {
-  "heading": "EU Update your email preferences"
+  "title": "Mattel, Inc. | Mattel, Inc.",
+  "heading": "EU Update your email preferences",
+  "yourEmailAddress": "Your Email Address: ",
+  "changePreferences": "Change My Email Preferences",
+  "myBrands": "My Brands",
+  "brandImage": [
+    {
+      "id": 10,
+      "selection": false,
+      "image": "/brand-1.png"
+    },
+    {
+      "id": 11,
+      "selection": false,
+      "image": "/brand-2.png"
+    },
+    {
+      "id": 12,
+      "selection": false,
+      "image": "/brand-3.png"
+    },
+    {
+      "id": 13,
+      "selection": false,
+      "image": "/brand-4.png"
+    },
+    {
+      "id": 14,
+      "selection": false,
+      "image": "/brand-5.png"
+    },
+    {
+      "id": 15,
+      "selection": false,
+      "image": "/brand-6.png"
+    },
+    {
+      "id": 16,
+      "selection": false,
+      "image": "/brand-7.png"
+    },
+    {
+      "id": 17,
+      "selection": false,
+      "image": "/brand-8.png"
+    },
+    {
+      "id": 18,
+      "selection": false,
+      "text": "Select All"
+    }
+  ],
+  "contentType": "Content Types",
+  "contentTypeDescription": "I would like to receive email notifications about:",
+  "contentTypeList": [
+    {
+      "id": 19,
+      "selection": false,
+      "text": "Playtips"
+    },
+    {
+      "id": 20,
+      "selection": false,
+      "text": "Promotions"
+    },
+    {
+      "id": 21,
+      "selection": false,
+      "text": "Surveys"
+    },
+    {
+      "id": 22,
+      "selection": false,
+      "text": "Sweepstakes"
+    }
+  ],
+  "myInterest": "My Interests",
+  "myInterestDescription": "I would like to receive email notifications about:",
+  "myInterestList": [
+    {
+      "id": 23,
+      "selection": false,
+      "text": "Art & Fashion"
+    },
+    {
+      "id": 24,
+      "selection": false,
+      "text": "Music"
+    },
+    {
+      "id": 25,
+      "selection": false,
+      "text": "Comics, TV Shows, & Movies"
+    },
+    {
+      "id": 26,
+      "selection": false,
+      "text": "Sports"
+    }
+  ],
+  "myRetailers": "My Retailers",
+  "myRetailersDescription": "I would like to hear from the following retailers:",
+  "myRetailersList": [
+    {
+      "id": 24,
+      "selection": false,
+      "text": "Target"
+    },
+    {
+      "id": 25,
+      "selection": false,
+      "text": "Kohl's"
+    },
+    {
+      "id": 26,
+      "selection": false,
+      "text": "Walmart"
+    },
+    {
+      "id": 27,
+      "selection": false,
+      "text": "Amazon"
+    },
+    {
+      "id": 28,
+      "selection": false,
+      "text": "Netto Marken-Discount"
+    }
+  ]
 }

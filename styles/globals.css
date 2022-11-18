@@ -1,10 +1,32 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next .min-vh-100 {
+  padding: 0;
+  background-color: #c9c9c9;
+}
+
+#__next .min-vh-100 .row .center-col {
+  background-color: white;
+}
+
 #__next .container-fluid .nav-link {
   color: black;
   font-size: larger;
   font-weight: 500;
 }
 
-.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb .breadcrumb-item+.breadcrumb-item::before {
   padding-right: var(--bs-breadcrumb-item-padding-x);
   content: var(--bs-breadcrumb-divider, ">");
   font-weight: 500;
@@ -12,12 +34,13 @@
   color: black;
 }
 
-.breadcrumb-item > a {
+.breadcrumb-item>a {
   color: black;
   font-size: large;
   font-weight: 300;
   text-decoration: none;
 }
+
 #__next .container-fluid .searchButton {
   background-color: transparent;
   color: black;
@@ -30,15 +53,251 @@
   border: 0px;
 }
 
+.title-block {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  padding-bottom: 3px;
+}
+
+.title-block h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 50px;
+  padding: 0px;
+}
+
+.title-block .container-fluid {
+  padding: 0px;
+}
+
+.title-block .title .label {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.title-block .title .desc {
+  font-size: 19px;
+}
+
+.main-content {
+  padding-top: 20px;
+}
+
+.main-content h3 {
+  font-size: 23px;
+  font-weight: 700;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main-content .container {
+  padding: 19px 0px;
+  border-bottom: solid 1px #121212;
+}
+
+.main-content .container h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.container .row .subscriptionList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.subscriptionItem {
+  border: solid 1px #121212;
+  border-radius: 7px;
+  background-color: white;
+  min-width: 20%;
+  max-width: 20%;
+  margin: 10px 11px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.subscriptionItem input {
+  cursor: pointer;
+  accent-color: red;
+}
+
+.checkbox {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  accent-color: red;
+}
+
+.subscriptionItem label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.subscriptionItem label img {
+  cursor: pointer;
+  max-width: 90%;
+}
+
+.subscriptionItem label .inner-content {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscriptionItem label .inner-content p {
+  margin-top: 13px;
+}
+
+.checkBoxItem {
+  border: solid 1px #121212;
+  border-radius: 7px;
+  background-color: white;
+  min-width: 46%;
+  max-width: 46%;
+  margin: 10px 11px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+}
+
+.checkBoxItem input {
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: red;
+}
+
+.checkBoxItem label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button-row {
+  /* background-color: red; */
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+
+.button-row .btn {
+  height: 45px;
+  width: 200px;
+}
+
+.button-row .btn-primary {
+  background-color: #121212;
+  border: solid 1px #121212;
+  color: white;
+  border-radius: 32px;
+}
+
+.button-row .btn-primary:hover {
+  background-color: #121212;
+  border: solid 1px #121212;
+  color: white;
+}
+
+.button-row .btn-primary:active {
+  background-color: #121212;
+  border: solid 1px #121212;
+  color: white;
+}
+
+.button-row .btn-secondary {
+  background-color: transparent;
+  color: #121212;
+  border: none;
+}
+
+.button-row .btn-secondary:hover {
+  background-color: transparent;
+  color: #121212;
+  border: none;
+}
+
+.button-row .btn-secondary:active {
+  background-color: transparent !important;
+  color: #121212;
+  border: none;
+}
+
+/*FOOTER CSS*/
+
+#__next .listFooter>.list-group-item {
+  background-color: transparent;
+  border: 0;
+}
+
+#__next .ListFooterTitle {
+  font-weight: 500;
+  font-size: larger;
+}
+
+/* #__next .accordionFooter {
+} */
+#__next .accordion {
+  --bs-accordion-bg: rgba(255, 255, 255, 0);
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-focus-border-color: #191a1b;
+  --bs-accordion-active-color: #191a1b;
+  --bs-accordion-active-bg: #191a1b00;
+  -bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(14, 14, 14, 0);
+}
+
 /*MEDIA QUERIES FOR RESPONSIVENESS*/
 @media screen and (max-width: 991px) {
   .Laptop {
     display: none;
+  }
+
+  .subscriptionItem {
+    min-width: 41%;
+    max-width: 41%;
+    margin: 10px 11px;
+  }
+
+  .subscriptionItem label img {
+    max-width: 60%;
+  }
+
+  .checkBoxItem {
+    min-width: 94%;
+    max-width: 94%;
+    margin: 10px 11px;
+  }
+
+  .button-row .btn {
+    height: 45px;
+    width: 120px;
   }
 }
 
 @media screen and (min-width: 991px) {
   .Mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #__next>.min-vh-100>.row .center-col>.container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

@@ -1,3 +1,4 @@
-import Wrapper from "./Wrapper";
+import Wrapper from './Wrapper';
+import SubscribtionWrapper from './SubscribtionWrapper';
 
-export { Wrapper };
+export { Wrapper, SubscribtionWrapper };

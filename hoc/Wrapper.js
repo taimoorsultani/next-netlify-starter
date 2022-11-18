@@ -1,28 +1,25 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import Head from 'next/head';
 
-import { MattelNavBar } from "../components/MattelNavBar";
-import { MattelFooter } from "../components/MattelFooter";
-const Wrapper = ({ children }) => {
+import { MattelNavBar } from '../components/MattelNavBar';
+import { MattelFooter } from '../components/MattelFooter';
+
+const Wrapper = ({ activeRegion, children }) => {
   return (
-    <Container
-      fluid
-      className="min-vh-100"
-      style={{ backgroundColor: "#c9c9c9", padding: 0 }}
-    >
-      <MattelNavBar />
-      <Container
-        style={{
-          //just gave margin for visuals
-          marginTop: 10,
-          backgroundColor: "#ffffff",
-          maxWidth: "1500px",
-          padding: 0,
-          // backgroundColor: "red",
-        }}
-      >
-        {children}
-      </Container>
+    <Container fluid className='min-vh-100'>
+      <Head>
+        <title>{activeRegion.title}</title>
+        <link rel='icon' href='/favicon.png' />
+      </Head>
+      <div className='row'>
+        <div className='col-md-1 col-sm-12'></div>
+        <div className='col-md-10 col-sm-12 center-col'>
+          <MattelNavBar />
+          <Container>{children}</Container>
+        </div>
+        <div className='col-md-1 col-sm-12'></div>
+      </div>
       <MattelFooter />
     </Container>
   );

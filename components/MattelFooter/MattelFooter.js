@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   Container,
@@ -9,20 +9,20 @@ import {
   Image,
   ListGroup,
   Accordion,
-} from "react-bootstrap";
+} from 'react-bootstrap';
 const MattelFooter = () => {
   return (
     <>
       <Container
         style={{
-          maxWidth: "1500px",
+          maxWidth: '1500px',
           paddingLeft: 70,
           paddingTop: 30,
         }}
       >
         <Row>
           <Col lg={12}>
-            <p style={{ fontSize: "large" }}>
+            <p style={{ fontSize: 'large' }}>
               <strong>
                 Be the first to know about new products & receive special
                 offers.
@@ -51,7 +51,7 @@ const MattelFooter = () => {
               size="lg"
               style={{
                 margin: 0,
-                backgroundColor: " #3e3d3d ",
+                backgroundColor: ' #3e3d3d ',
                 borderTopLeftRadius: 0,
                 borderTopRightRadius: 25,
                 borderBottomLeftRadius: 0,
@@ -145,7 +145,7 @@ const MattelFooter = () => {
                   © {new Date().getFullYear()} Mattel
                 </ListGroup.Item>
               </ListGroup>
-              <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
                 <Image style={{ width: 60, margin: 10 }} src="/privacy.png" />
               </div>
             </Col>
@@ -242,7 +242,7 @@ const MattelFooter = () => {
                   © {new Date().getFullYear()} Mattel
                 </ListGroup.Item>
               </ListGroup>
-              <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
                 <Image style={{ width: 60, margin: 10 }} src="/privacy.png" />
               </div>
             </Col>

@@ -1,13 +1,12 @@
-export default function Subscribtion({
+export default function Checkbox({
   id,
   selection,
-  image,
   text,
   onSubscribtionChange,
 }) {
   const onClick = () => onSubscribtionChange(id);
   return (
-    <div key={id} className="subscriptionItem" onClick={onClick}>
+    <div key={id} className="checkBoxItem" onClick={onClick}>
       <input
         className="checkbox"
         type="checkbox"
@@ -17,8 +16,7 @@ export default function Subscribtion({
       />
       <label htmlFor={`item-${id}`} onClick={onClick}>
         <div className="inner-content" onClick={onClick}>
-          {image && <img src={image} />}
-          {text && <p>{text}</p>}
+          <p>{text}</p>
         </div>
       </label>
     </div>

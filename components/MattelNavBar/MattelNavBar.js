@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from 'react';
 import {
   Container,
   Image,
@@ -11,9 +11,9 @@ import {
   Col,
   Navbar,
   Offcanvas,
-} from "react-bootstrap";
+} from 'react-bootstrap';
+import { BiSearch } from 'react-icons/bi';
 
-import { BiSearch } from "react-icons/bi";
 const MattelNavBar = () => {
   const expand = false;
   const componentRef = useRef(null);
@@ -21,35 +21,27 @@ const MattelNavBar = () => {
 
   return (
     <>
-      <Container
-        fluid
-        style={{
-          backgroundColor: "#ffffff",
-          maxWidth: "1500px",
-          padding: 0,
-        }}
-        className="Laptop"
-      >
-        <div style={{ display: "flex", justifyContent: "center" }}>
+      <Container fluid className="Laptop">
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Image
             style={{ width: 70, margin: 10 }}
             src="/logo.png"
             roundedCircle
           />
         </div>
-        <hr className="solid" style={{ width: "100%", margin: 0 }} />
+        <hr className="solid" style={{ width: '100%', margin: 0 }} />
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "3fr 2fr",
-            gridTemplateRows: "50px",
+            display: 'grid',
+            gridTemplateColumns: '3fr 2fr',
+            gridTemplateRows: '50px',
             marginTop: 10,
           }}
         >
           <div
             style={{
-              display: "flex",
-              justifyContent: "flex-end",
+              display: 'flex',
+              justifyContent: 'flex-end',
               gap: 100,
               flexshrink: 2,
             }}
@@ -67,19 +59,16 @@ const MattelNavBar = () => {
           </div>
           <div
             style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              marginRight: "30px",
+              display: 'flex',
+              justifyContent: 'flex-end',
+              marginRight: '30px',
             }}
           >
             {!showSearch && (
               <Button
                 size="lg"
                 bsPrefix="searchButton"
-                onClick={() => {
-                  console.log("d");
-                  setShowSearch(true);
-                }}
+                onClick={() => setShowSearch(true)}
               >
                 <BiSearch size={35} />
                 Search
@@ -102,10 +91,10 @@ const MattelNavBar = () => {
         </div>
         <div
           style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            marginLeft: "70px",
-            marginTop: "10PX",
+            display: 'flex',
+            justifyContent: 'flex-start',
+            marginLeft: '70px',
+            marginTop: '10PX',
           }}
         >
           <Breadcrumb>
@@ -115,26 +104,19 @@ const MattelNavBar = () => {
         </div>
       </Container>
 
-      <Container
-        fluid
-        style={{ backgroundColor: "#ffffff", maxWidth: "100%", padding: 0 }}
-        className="Mobile"
-      >
+      <Container fluid className="Mobile">
         <Row style={{ margin: 0 }}>
-          <Col style={{ display: "flex" }}>
+          <Col style={{ display: 'flex' }}>
             <Button
               size="lg"
               bsPrefix="searchButton"
-              onClick={() => {
-                console.log("d");
-                setShowSearch(true);
-              }}
+              onClick={() => setShowSearch(true)}
             >
               <BiSearch size={50} />
             </Button>
           </Col>
           <Col>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Image
                 style={{ width: 60, margin: 10 }}
                 src="/logo.png"
@@ -142,7 +124,7 @@ const MattelNavBar = () => {
               />
             </div>
           </Col>
-          <Col style={{ display: "flex", justifyContent: "flex-end" }}>
+          <Col style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <Navbar key={expand} expand={expand} style={{ border: 0 }}>
               <Container fluid>
                 <Navbar.Toggle
@@ -180,14 +162,14 @@ const MattelNavBar = () => {
             </Navbar>
           </Col>
         </Row>
-        <hr className="solid" style={{ width: "100%", margin: 0 }} />
+        <hr className="solid" style={{ width: '100%', margin: 0 }} />
 
         <div
           style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            marginLeft: "20px",
-            marginTop: "10PX",
+            display: 'flex',
+            justifyContent: 'flex-start',
+            marginLeft: '20px',
+            marginTop: '10PX',
           }}
         >
           <Breadcrumb>
