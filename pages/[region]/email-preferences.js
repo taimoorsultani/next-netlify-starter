@@ -8,7 +8,6 @@ export default function EmailPreferences() {
   const router = useRouter();
   const { region } = router.query;
   const activeRegion = regions[region];
-  console.log('activeRegion: ', activeRegion);
 
   if (!activeRegion) {
     return null;
